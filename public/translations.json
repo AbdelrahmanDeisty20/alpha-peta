@@ -20,7 +20,9 @@
         "الأقسام": "Sections",
         "التصنيف": "Classification",
         "category": "category",
-        "التصنيف جديد": "New classification"
+        "التصنيف جديد": "New classification",
+        "جميع الحقوق محفوظة لشركة الفا بيتا @ 2024 ": "All rights reserved to Alfa Beta @ 2024",
+        "صنع بكل حب ": "Made with love"
     },
     "ar": {
         "فريق العمل": "فريق العمل",
@@ -32,6 +34,7 @@
         "category": "فئة",
         "Project Title": "عنوان المشروع",
         "Project Description": "وصف المشروع",
-        "Dashboard": "لوحة القيادة"
+        "Dashboard": "لوحة القيادة",
+        "جميع الحقوق محفوظة لشركة الفا بيتا @ 2024 ": "جميع الحقوق محفوظة لشركة الفا بيتا @ 2024"
     }
 }
