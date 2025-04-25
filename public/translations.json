@@ -1,0 +1,37 @@
+{
+    "en": {
+        "لا توجد خدمات متاحة حالياً": "There are no services currently available",
+        "لا توجد مشاريع متاحة حالياً": "There are no projects currently available",
+        "لا يوجد شركاء متاحين حالياً": "There are no partners currently available",
+        "فريق العمل": "work team",
+        "": "",
+        "المشاريع المنجزة": "Completed projects",
+        "عدد التصنيفات": "Number of classifications",
+        "التصنيفات الفعالة": "Effective classifications",
+        "قوانين حالية": "Current laws",
+        "عدد العملاء": "The number of customers",
+        "عدد الشركاء": "The number of partners",
+        "عدد اللوائح والتنظيمات\n": "Number of regulations and organizations",
+        "التصنيفات الفعالة\n": "Effective classifications",
+        "المحتوى العربي": "Arabic content",
+        "تعديل مقال": "Amending an article",
+        "Edit مقال": "Edit article",
+        "إعدادات المقال": "Article settings",
+        "الأقسام": "Sections",
+        "التصنيف": "Classification",
+        "category": "category",
+        "التصنيف جديد": "New classification"
+    },
+    "ar": {
+        "فريق العمل": "فريق العمل",
+        "Edit article": "تحرير المقالة",
+        "لا توجد خدمات متاحة حالياً": "لا توجد خدمات متاحة حالياً",
+        "لا توجد مشاريع متاحة حالياً": "لا توجد مشاريع متاحة حالياً",
+        "لا يوجد شركاء متاحين حالياً": "لا يوجد شركاء متاحين حالياً",
+        "إعدادات المقال": "إعدادات المقال",
+        "category": "فئة",
+        "Project Title": "عنوان المشروع",
+        "Project Description": "وصف المشروع",
+        "Dashboard": "لوحة القيادة"
+    }
+}

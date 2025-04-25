@@ -1,0 +1,640 @@
+@media (min-width: 1500px) {
+    .our__vesion__values .image__value{
+        width: 500px;
+    }
+
+    .our__vesion__values{
+        gap: 300px;
+    }
+}
+
+@media (max-width: 1200px) {
+    nav .element ul {
+        font-size: 16px;
+    }
+    .blogs .blog__card .blog__tex{
+        height: 220px;
+    }
+}
+
+@media (max-width:1024px) {
+
+    nav .element,
+    nav .language {
+        display: none;
+    }
+
+    .menu-div {
+        display: block;
+    }
+
+    .landing {
+        height: calc(100vh - 100px);
+        padding: 30px 0;
+
+    }
+
+    .about__company__text__header {
+        margin-bottom: 20px;
+    }
+
+    .about__company__btn {
+        margin-top: 10px;
+    }
+
+    .about__company__text p {
+        line-height: 40px;
+    }
+
+    .blogs .blogs__content .blog__card {
+        width: calc(100% / 3 - 10px);
+    }
+    .blogs .blog__card .blog__tex{
+        height: 200px;
+    }
+
+    .team__work__content .team__card{
+        width: calc(100% / 3 - 40px);
+    }
+
+    .our__vession p{
+        font-size: 18px;
+    }
+
+    .our__vesion__header{
+        padding-left: 50px;
+    }
+
+    .our__value__section ul li{
+        font-size: 18px;
+    }
+
+    .about__project .about__project__content .img{
+        width: 50%;
+        height: 500px;
+    }
+
+    .about__project .about__project__content .about__project__text p {
+        font-size: 18px;
+        line-height: 48px;
+        font-weight: 500;
+        color: #A9A2A2;
+    }
+
+    .about__project .about__project__content .about__project__text p {
+        font-size: 18px;
+        line-height: 48px;
+        font-weight: 500;
+        color: #A9A2A2;
+    }
+
+    .about_blog_section .about_blog_content .img {
+        width: 50%;
+        height: 450px;
+    }
+
+    .about_blog_section .about_blog_content .blog__text p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 35px;
+        color: #A9A2A2;
+    }
+
+    .about_blog_section .about_blog_content .blog__text ul li {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 35px;
+        color: #A9A2A2;
+    }
+
+    .contact__us__form .line {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .contact__us__form .line::before, .contact__us__form .line::after{
+        left: 20px;
+    }
+
+    .contact__us__form .line::after{
+        right: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .projects__slider__container .item {
+        width: calc(100% / 2 - 15px);
+    }
+
+    .about__project .about__project__content{
+        flex-direction: column;
+    }
+
+    .about__project .about__project__content .img{
+        width: 100%;
+    }
+
+    .about_blog_section .about_blog_content{
+        flex-direction: column;
+    }
+
+    .about_blog_section .about_blog_content .img{
+        width: 100%;
+    }
+
+    .partner__container .item{
+        width: calc(100% / 4 - 30px);
+      }
+}
+
+@media (max-width:768px) {
+
+    .landing{
+        height: auto;
+    }
+
+    .landing .row {
+        flex-direction: column-reverse;
+
+    }
+
+    .landing .row .col-sm-12 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .landing .landing-text {
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .landing .landing-text h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .landing .landing-text h4 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+
+    .mask1 {
+        position: relative;
+        width: 300px;
+        height: 280px;
+        -webkit-mask-image: url(../images/image.png);
+        mask-image: url(../images/image.png);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        /* The color inside the masked area */
+        mask-size: 300px 280px;
+    }
+
+    .copy__write {
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer .top-footer .social {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    footer .top-footer p {
+        text-align: center;
+    }
+
+    .copy__write {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .about__company__text p {
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    .about__company_img {
+        height: 300px;
+    }
+
+    .about__company .about__company__content {
+        gap: 20px;
+    }
+
+    .about__company__btn {
+        width: 200px;
+        height: 50px;
+    }
+
+    .partners .partners__slider .img {
+        height: 200px;
+    }
+
+    .blogs .blogs__content .blog__card {
+        width: calc(100% / 2 - 10px);
+    }
+
+    .blogs .blogs__content {
+        display: none;
+    }
+
+    .blogs__slider {
+        display: block;
+    }
+
+    .blogs__slider .blog__card .blog__tex h3 {
+        font-size: 14px;
+    }
+
+    .blogs__slider .blog__card .blog__tex p {
+        font-size: 13px;
+        text-align: right;
+        margin-top: 20px;
+    }
+
+    .blogs__slider .owl-dots {
+        margin-top: 20px;
+    }
+
+    .presedent__word .about__company_img{
+        width: 300px;
+    }
+
+    .team__work__content .team__card{
+        width: calc(100% / 2 - 40px);
+    }
+
+    .our__vesion__header{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .our__vesion__title .img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .our__vesion__title h3{
+        font-size: 20px;
+    }
+
+    .our__vesion__message .message__img {
+        width: 250px;
+        height: 260px;
+    }
+
+    .message_section {
+        padding: 10px;
+    }
+
+    .our__vesion__values{
+        gap: 20px;
+    }
+
+    .our__vesion__values .image__value {
+        width: 300px;
+        height: 350px;
+        margin-top: 100px;
+    }
+
+    .our__value__section {
+        border: 1px dashed #000;
+        height: auto;
+        padding: 10px;
+    }
+
+    .custom__landing .main-container{
+        padding-top: 0px;
+    }
+
+    .landing__text{
+        margin-top: 30px;
+    }
+
+    .landing__text .landing__header {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .landing__text .landing__links {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .services__img__container .img{
+        height: 150px;
+    }
+
+    .about__services .about__services__text p{
+        font-size: 18px;
+    }
+
+    .contact__us__form .line::before, .contact__us__form .line::after{
+        width: 30%;
+    }
+
+    .contact__us__form form {
+        background-color: #E5EEF4;
+        width: 500px;
+        margin: 50px auto;
+        padding: 50px;
+        border-radius: 10px;
+    }
+
+    .custom__landing {
+        height: 570px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .about__company .about__company__content {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .about__company__text__header {
+        justify-content: center;
+    }
+
+    .about__company__btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about__company__text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about__company_img {
+        width: 100%;
+    }
+
+    .contact-us-content {
+        flex-direction: column;
+    }
+
+    .contact-us .contact-us-content .contact-us-info,
+    .contact-us .contact-us-content .contact-us-map {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-us .contact-us-content .contact-us-map .map iframe {
+        width: 100%;
+        height: 100%;
+        margin-right: 10px;
+        margin-top: -10px;
+        border-radius: 5px;
+    }
+
+    .contact-us .contact-us-content .contact-us-info h3 {
+        justify-content: center;
+    }
+
+    .contact-us p.description {
+        width: 100%;
+    }
+
+    .contact-us-info .mail,
+    .contact-us-info .call {
+        justify-content: center;
+    }
+
+    .contact-us-info .direction-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .presedent__word .about__company__text{
+        width: 100%;
+    }
+
+    .presedent__word .about__company_img{
+        width: 100%;
+    }
+
+    .our__vesion__message{
+        flex-direction: column-reverse;
+    }
+
+    .our__vesion__values{
+        flex-direction: column;
+    }
+
+    .our__vesion__values .image__value {
+        width: 300px;
+        height: 350px;
+        margin: auto;
+    }
+
+    .services__img__container .img{
+        width: calc(100% / 2 - 20px);
+    }
+
+    .form__order .input-container{
+        flex-direction: column;
+    }
+
+    .form__order form{
+        padding: 20px 10px;
+    }
+
+    .form__order input[type="submit"]{
+        width: 200px;
+    }
+
+    .projects__slider__container .item {
+        width: 100%;
+    }
+
+    .projects__slider__container .item .img{
+        height: 200px;
+    }
+
+    .about_blog_section .about_blog_content .blog__text {
+        flex: 1;
+        text-align: center;
+    }
+
+    .about_blog_section .about_blog_content .blog__text h3 {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .contact__us__form form {
+        width: 95%;
+    }
+
+    .contact__us__form form .input-container{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .contact__us__form .line::before, .contact__us__form .line::after{
+        width: 50px;
+    }
+}
+
+@media (max-width: 475px) {
+    .mask1 {
+        position: relative;
+        width: 250px;
+        height: 235px;
+        -webkit-mask-image: url(../images/image.png);
+        mask-image: url(../images/image.png);
+        mask-size: 250px 232px;
+    }
+
+    .landing .landing-text h2 {
+        font-size: 20px;
+    }
+
+    .landing .landing-text h4 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 200px;
+        height: 70px;
+    }
+
+    .copy__write p {
+        font-size: 12px;
+    }
+
+    .team__work__content .team__card{
+        width: 100%;
+    }
+
+    .services__img__container .img{
+        width: 100%;
+        height: 200px;
+    }
+
+    .custom__landing {
+        height: 500px !important;
+    }
+    
+}
+
+@media (max-width: 450px){
+    .projects .projects__slider .project__card h3{
+        text-align: center;
+    }
+
+    .projects .projects__slider .project__card p{
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .partners .partners__slider .img{
+        height: 130px;
+    }
+
+    .blogs  .blog__card{
+        width: 100%;
+    }
+
+    .blogs  .blog__card .blog__tex h3{
+        font-size: 14px;
+    }
+
+    .blogs  .blog__card .blog__tex p{
+        font-size: 12px;
+    }
+
+    .blogs  .blog__card .blog__tex{
+        height: 180px;
+    }
+
+    footer .top-footer p{
+        line-height: 2;
+        font-size: 14px;
+    }
+
+    footer .top-footer .footer-links ul li a{
+        font-size: 12px;
+    }
+
+    footer .top-footer h4 {
+        font-weight: bold;
+        padding-bottom: 15px;
+        font-size: 18px;
+    }
+
+    footer .top-footer .footer-links ul{
+        gap: 5px;
+    }
+
+    .about__project .about__project__content .about__project__text h4{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .about__project .about__project__content .about__project__text p {
+        font-size: 15px;
+        line-height: 35px;
+        font-weight: 500;
+        color: #A9A2A2;
+    }
+    
+    .project_details_slider .img {
+        width: 100%;
+        height: 334px;
+    }
+
+    .partner__container .item{
+        width: calc(100% / 3 - 30px);
+      }
+
+      .contracts__section .change__user__img {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    .contracts__section .pen-img {
+        position: absolute;
+        bottom: 0;
+        width: 25px;
+        height: 25px;
+    }
+
+    .contracts__section .input input {
+        width: 300px;
+        height: 50px;
+        background-color: #E5EEF4;
+        font-size: 16px;
+        color: #797575;
+        border: none;
+        outline: none;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .projects .projects__slider .project__card .img{
+        height: 300px;
+    }
+
+    .partner__container .item{
+        width: calc(100% / 2 - 30px);
+      }
+}
