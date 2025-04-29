@@ -2,10 +2,14 @@
 
 namespace App\Filament\Resources;
 
+
 use App\Filament\Resources\ContactResource\Pages;
 use App\Models\Contact;
 use Filament\Forms;
+use Filament\Infolists\Components\Section as InfolistSection;
 use Filament\Forms\Form;
+use Filament\Infolists\Components\TextEntry;
+use Filament\Infolists\Infolist;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
@@ -125,7 +129,42 @@ class ContactResource extends Resource
     {
         return [
             'index' => Pages\ListContacts::route('/'),
+            'view' => Pages\viewNoti::route('/{record}'),
             'edit' => Pages\EditContact::route('/{record}/edit'),
         ];
+    }
+    public static function infolist(Infolist $infolist): Infolist
+    {
+        return $infolist
+            ->schema([
+                InfolistSection::make(fn (Contact $record) => __('عرض رسالة من') . ' ' . $record->name)
+                    ->description(fn (Contact $record) => __('رسالة من') . ' ' . $record->name . ' ' . __('بتاريخ') . ' ' . $record->created_at->format('Y-m-d'))
+                    ->schema([
+                        TextEntry::make('name')
+                            ->label(__('Name')),
+
+                        TextEntry::make('email')
+                            ->label(__('Email'))
+                            ->url(fn (Contact $record) => 'mailto:' . $record->email, true),
+
+                        TextEntry::make('phone')
+                            ->label(__('Phone'))
+                            ->url(fn (Contact $record) => 'tel:' . $record->phone, true),
+
+                        TextEntry::make('message')
+                            ->label(__('Message')),
+
+                        TextEntry::make('isReply')
+                            ->label(__('Status'))
+                            ->formatStateUsing(fn (Contact $record) => $record->isReply ? __('Replied') : __('Not Replied'))
+                            ->color(fn (Contact $record) => $record->isReply ? 'success' : 'danger')
+                            ->badge(),
+
+                        TextEntry::make('created_at')
+                            ->label(__('Created At'))
+                            ->dateTime(),
+                    ])
+                    ->columns(2),
+            ]);
     }
 }

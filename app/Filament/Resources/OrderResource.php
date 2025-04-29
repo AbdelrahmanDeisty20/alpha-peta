@@ -3,9 +3,13 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\OrderResource\Pages;
+use App\Models\Contact;
 use App\Models\Order;
 use Filament\Forms;
+use Filament\Infolists\Components\Section as infoListSectionOrder; 
 use Filament\Forms\Form;
+use Filament\Infolists\Components\TextEntry;
+use Filament\Infolists\Infolist;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
@@ -185,6 +189,45 @@ class OrderResource extends Resource
             'index' => Pages\ListOrders::route('/'),
             'create' => Pages\CreateOrder::route('/create'),
             'edit' => Pages\EditOrder::route('/{record}/edit'),
+            'view' => Pages\viewOrder::route('/{record}'),
+
         ];
+    }
+    public static function infolist(Infolist $infolist): Infolist
+    {
+
+        return $infolist
+            ->schema([
+                infoListSectionOrder::make(fn(Order $record) => __('عرض رسالة من') . ' ' . $record->name)
+                    ->description(fn(Order $record) => __('رسالة من') . ' ' . $record->name . ' ' . __('بتاريخ') . ' ' . $record->created_at->format('Y-m-d'))
+                    ->schema([
+                        TextEntry::make('name')
+                            ->label(__('Name')),
+
+                        TextEntry::make('email')
+                            ->label(__('Email'))
+                            ->url(fn(Order $record) => 'mailto:' . $record->email, true) // Redirect to email
+
+                        ,
+
+                        TextEntry::make('phone')
+                            ->label(__('Phone'))
+                            ->url(fn(Order $record) => 'tel:' . $record->phone, true), // Redirect to phone
+
+                        TextEntry::make('message')
+                            ->label(__('message')),
+
+                        TextEntry::make('isReply')
+                            ->label(__('isReply'))
+                            ->formatStateUsing(fn(Order $record) => $record->isReply ? __('is replied') : __('not replied'))
+                            ->color(fn(Order $record) => $record->isReply ? 'success' : 'danger')
+                            ->badge(),
+
+                        TextEntry::make('created_at')
+                            ->label(__('Created At'))
+                            ->dateTime()
+                    ])->columns(2),
+
+            ]);
     }
 }

@@ -38,7 +38,7 @@
                                     <li><a href="{{route('web.service')}}">{{__('الخدمات')}}</a></li>
                                     <li><a href="{{route('web.blog')}}">{{__('المدونة')}}</a></li>
                                     <li><a href="{{route('web.regulation')}}">{{__('اللوائح والسياسات')}}</a></li>
-                                    <li><a href="/contracts.html">{{__('منصة العقود')}}</a></li>
+                                    <li><a href="{{route('web.home')}}">{{__('منصة العقود')}}</a></li>
                                     <li><a href="{{route('web.partner')}}">{{__('شركاء النجاح')}}</a></li>
                                 </ul>
                             </div>

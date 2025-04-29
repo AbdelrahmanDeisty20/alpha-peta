@@ -5,6 +5,7 @@
         <div class="main-container">
             <form method="post" action="{{ route('web.serviceOrdr') }}" id="contactForm">
                 @csrf
+                <input type="hidden" name="service_id" value="{{ $orders->id ?? '' }}">
                 <h3> {{ __('نموذج طلب الخدمة ') }}</h3>
                 @if (session('success'))
                     <div class="alert alert-success">
@@ -245,7 +246,7 @@
                                 title: '{{ __('تم الإرسال بنجاح') }}',
                                 text: response.message,
                                 confirmButtonText: '{{ __('حسناً') }}',
-                                timer: 3000, 
+                                timer: 3000,
                                 timerProgressBar: true
                             });
                             form.reset();

@@ -17,4 +17,14 @@ class CreateService extends CreateRecord
     {
         return __('Blog Created Successfully');
     }
+    protected function afterCreate(): void
+{
+    if (is_array($this->data['media'])) {
+        foreach ($this->data['media'] as $mediaPath) {
+            $this->record->media()->create([
+                'image' => $mediaPath,
+            ]);
+        }
+    }
+}
 }

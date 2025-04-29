@@ -6,7 +6,7 @@
             <div class="main-container">
                 <div class="about__company__content">
                     <div class="about__company__text">
-                        <a href="/aboutus.html" class="about__company__text__header">
+                        <a href="{{route('web.about')}}" class="about__company__text__header">
                             <div class="img">
                                 {{-- <img src="{{ asset('web/images/about-us-img.png') }}" alt="logo" /> --}}
                             </div>
@@ -33,7 +33,7 @@
         <section class="services">
             <div class="main-container">
                 <div class="services_content">
-                    <a href="/services.html" class="about__company__text__header">
+                    <a href="{{route('web.service')}}" class="about__company__text__header">
                         <div class="img">
                             <img src="{{ asset('web/images/about-us-img.png') }}" alt="logo" />
                         </div>
@@ -45,7 +45,7 @@
                             @foreach ($services as $service)
                             <div class="item">
                                 <div class="services__item">
-                                    <a href="/services.html" class="services__card">
+                                    <a href="{{route('web.aboutService',$service->id)}}" class="services__card">
                                         <div class="img">
                                             <img src="{{ $service->image_path }}" alt="" />
                                         </div>
@@ -72,7 +72,7 @@
         <section class="projects">
             <div class="main-container">
                 <div class="projects__content">
-                    <a href="/projects.html" class="about__company__text__header">
+                    <a href="{{route('web.project')}}" class="about__company__text__header">
                         <div class="img">
                             <img src="{{ asset('web/images/about-us-img.png') }}" alt="logo" />
                         </div>
@@ -137,7 +137,7 @@
     <!-- Blog Section -->
     <section class="blogs">
         <div class="main-container">
-            <a href="/blogs.html" class="about__company__text__header">
+            <a href="{{route('web.blog')}}" class="about__company__text__header">
                 <div class="img">
                     <img src="{{ asset('web/images/about-us-img.png') }}" alt="logo" />
                 </div>
@@ -146,7 +146,7 @@
             <div class="blogs__content">
                 @if($blogs->count() > 0)
                     @foreach ($blogs as $blog)
-                    <a href="/blogdetails.html" class="blog__card">
+                    <a href="{{route('web.blogDetails',$blog->id)}}" class="blog__card">
                         <div class="img">
                             <img src="{{ $blog->image_path }}" alt="">
                         </div>
@@ -174,7 +174,7 @@
     <!-- contact us section -->
     <section class="contact-us">
         <div class="main-container">
-            <a href="/contactus.html" class="about__company__text__header">
+            <a href="{{route('web.contact')}}" class="about__company__text__header">
                 <div class="img">
                     <img src="{{ asset('web/images/about-us-img.png') }}" alt="logo" />
                 </div>

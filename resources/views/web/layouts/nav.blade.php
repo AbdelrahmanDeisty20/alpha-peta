@@ -16,7 +16,7 @@
                     <li><a href="{{ route('web.project') }}">{{ __('المشاريع') }}</a></li>
                     <li><a href="{{ route('web.blog') }}">{{ __('المدونة') }}</a></li>
                     <li><a href="{{ route('web.regulation') }}">{{ __('اللوائح والسياسات') }}</a></li>
-                    <li><a href="/contracts.html">{{ __('منصة العقود') }}</a></li>
+                    <li><a href="{{route('web.home')}}">{{ __('منصة العقود') }}</a></li>
                     <li><a href="{{ route('web.contact') }}">{{ __('تواصل معنا') }}</a></li>
                 </ul>
             </div>

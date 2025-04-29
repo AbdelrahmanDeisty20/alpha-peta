@@ -12,6 +12,7 @@ class Order extends Model
         'name',
         'email',
         'phone',
+        'service_id',
         'subject',
         'message',
         'code_vervication'

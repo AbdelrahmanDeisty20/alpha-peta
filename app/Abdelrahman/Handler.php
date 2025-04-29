@@ -1,6 +1,11 @@
 <?php
 
+use App\Models\User;
 use App\Settings\GeneralSettings;
+use Filament\Notifications\Events\DatabaseNotificationsSent;
+use Filament\Notifications\Notification as FilamentNotification;
+use Filament\Notifications\Actions\Action;
+
 function getSetting($key, $lang = null)
 {
     $generalSettings = app(abstract: GeneralSettings::class);
@@ -44,4 +49,25 @@ function transWord($word, $lang = null)
     }
 
     return $translatedWord;
+}
+function sendNotifyAdmin($title, $label, $route)
+{
+    $admin = User::where('id',1)->first();
+    FilamentNotification::make()
+        ->title($title)
+        ->actions([
+            Action::make('view')
+                ->label($label)
+                ->button()
+
+                ->url(function () use ($route) {
+                    return $route;
+                })
+                ->markAsRead()
+
+        ])
+        // ->broadcast(User::role('admin')->first());
+        ->sendToDatabase($admin);
+
+    event(new DatabaseNotificationsSent($admin));
 }
