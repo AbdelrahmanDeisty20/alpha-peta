@@ -11,6 +11,7 @@
                                 {{-- <img src="{{ asset('web/images/about-us-img.png') }}" alt="logo" /> --}}
                             </div>
                             <h2>{{ __('نبذة عن الشركة') }}</h2>
+                            
                         </a>
                         <p>
                             {{ $setting->{'about_desc_two_' . app()->getLocale()} }}
